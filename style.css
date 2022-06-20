@@ -2,7 +2,6 @@
 html{
   min-width: 100vh;
 } */
-
 body {
   margin: 0;
   padding: 0;
@@ -10,9 +9,11 @@ body {
   font-family: 'Radio Canada', sans-serif;
   letter-spacing: 0.03em;
 }
-.fa-solid, .fa-regular{
+
+.fa-solid, .fa-regular {
   margin-left: 5px;
 }
+
 a {
   text-decoration: none;
 }
@@ -24,13 +25,20 @@ p {
   font-weight: 400;
 }
 
+hr {
+  margin: 70px auto;
+  width: 100px;
 
-hr{
-  margin: 100px 0;
 }
 
+@media (max-width: 1000px) {
+  hr {
+margin: 20px auto;
 
-@media (max-width: 450px) {
+  }
+}
+
+@media (max-width: 1000px) {
   p {
     color: #C4C4C4;
     font-size: 16px;
@@ -65,6 +73,19 @@ hr{
   padding-bottom: 2%;
   background: linear-gradient(180.37deg, #C3D5D2 83.09%, #FFFFFF 142.65%);
 }
+
+
+@media  (max-width: 1000px){
+  #myWorkPort{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+
+
+
+
 
 .backgroundgrad {
   background: linear-gradient(359.66deg, #C3D5D2 3.35%, #528286 75.69%);
@@ -134,7 +155,7 @@ hr{
   margin-bottom: 40px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1000px) {
   .textitem {
     margin-bottom: 10px;
   }
@@ -150,7 +171,7 @@ hr{
   */ line-height: 55px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1000px) {
   .herotext {
     padding-top: 20%;
     font-size: 32px;
@@ -173,9 +194,23 @@ hr{
   margin-bottom: 128px;
 }
 
+
+@media (max-width: 1000px) {
+ .PorttextFiledflex{
+   flex-direction: column;
+   margin-bottom: 64px;
+ }
+}
+
 .rightfleximg {
   width: 35vw;
   height: 54vh;
+}
+@media (max-width: 1000px) {
+ .rightfleximg{
+   width: 100%;
+  height: 100%;
+ }
 }
 
 .workimg {
@@ -186,6 +221,14 @@ hr{
 .leftflex {
   width: 35vw;
   padding: 2%;
+}
+
+@media (max-width: 1000px) {
+ .leftflex{
+   width: 100%;
+  padding: 2%;
+  text-align: center;
+ }
 }
 
 /* .leftflex:first-child{
@@ -225,12 +268,19 @@ hr{
   border: none;
 }
 
+@media (max-width: 1000px) {
+ .workBut{
+   margin-bottom: 10px;
 
-.butgrad1{
-    background: linear-gradient(180deg, rgba(103, 78, 244, 0.2) 0%, #E8E7EC 196.09%);
+ }
 }
-.butgrad2{
-    background: linear-gradient(180deg, #F3D6D7 0%, #E1A3A3 196.09%);
+
+.butgrad1 {
+  background: linear-gradient(180deg, rgba(103, 78, 244, 0.2) 0%, #E8E7EC 196.09%);
+}
+
+.butgrad2 {
+  background: linear-gradient(180deg, #F3D6D7 0%, #E1A3A3 196.09%);
 }
 
 .portheading {
@@ -253,8 +303,23 @@ hr{
   background: linear-gradient(180deg, #D4E1DF 0%, #EDF2F1 100%);
 }
 
+
+@media (max-width: 1000px) {
+ #testimonials{
+   width: 100%;
+padding: 20px 10px
+ }
+}
+
 .flexcontrolfortestimonial {
   display: flex;
+}
+
+@media (max-width: 1000px) {
+ .flexcontrolfortestimonial{
+   flex-direction: column;
+
+ }
 }
 
 .testimonialsimg {
@@ -263,15 +328,36 @@ hr{
   z-index: 3;
 }
 
+@media (max-width: 1000px) {
+ .testimonialsimg{
+   width: 330px;
+   height: 220px;
+   z-index: 0;
+
+ }
+}
+
 .contentfortestimonials {
   padding-top: 40px;
   width: 50%;
-  height: 450px;
+  height: 1000px;
   position: absolute;
   left: 50%;
   z-index: 6;
-  /* margin-left: 10%; */
 }
+
+@media (max-width: 1000px) {
+ .contentfortestimonials{
+   position: static;
+   width: 100%;
+   height: 100%;
+   padding:20px 10px;
+
+
+ }
+}
+
+
 
 .samPicture2 {
   filter: grayscale(100);
@@ -286,33 +372,59 @@ hr{
 .testipara {
   width: 80%;
   color: #142E30;
-    font-style:italic;
-    margin: 0;
+  font-style: italic;
+  margin: 0;
 }
 
-.authorrating{
+@media (max-width: 1000px) {
+ .testipara{
+   width: 100%;
+   text-align: left;
+
+
+ }
+}
+
+
+.authorrating {
   margin-bottom: 50px;
 }
 
+
+
+
+
+
+
 /* what i do section */
-.whatido{
+.whatido {
   width: 100vw;
   height: 100%;
-  padding: 5vh 15vw 5vh 15vw;
+  padding: 5vh 15vw 15vh 15vw;
   text-align: center;
   background: linear-gradient(178.44deg, #ECF2F1 19.44%, #528286 102.43%);
 }
 
-.whatidopara{
+@media (max-width: 1000px) {
+ .whatido{
+
+  padding: 2vh 5vw 15vh 5vw;
+
+ }
+}
+
+
+.whatidopara {
   color: #142E30;
+  font-size: 0.8em;
 }
 
-.whatpeoplesay{
+.whatpeoplesay {
   color: #E3713E;
+  text-align: left;
 }
 
-
-.ceoLa{
+.ceoLa {
   color: black;
   font-weight: 400;
   font-size: 10px;
@@ -320,18 +432,27 @@ hr{
   margin-right: 10px;
 }
 
-.starating{
+.starating {
   width: 75px;
 }
 
-.whatidocontainer{
+.whatidocontainer {
   display: flex;
   justify-content: space-around;
 }
 
-.firstbox{
+
+@media (max-width: 1000px) {
+ .whatidocontainer{
+   flex-direction: column;
+
+ }
+}
+
+
+.firstbox {
   padding: 56px 24px;
-  width: 510px;
+  width: 40%;
   height: 100%;
   margin: 25px;
   background: #F7FBF7;
@@ -339,20 +460,48 @@ hr{
   border-radius: 10px;
 }
 
-.designtext{
+@media (max-width: 1000px) {
+ .firstbox{
+
+  width: 100%;
+  margin: 5px;
+  padding: 20px 12px;
+
+ }
+}
+
+.fontawesomelogo{
+  width: 30%;
+}
+
+
+@media (max-width: 1000px) {
+ .fontawesomelogo{
+   width: auto;
+
+ }
+}
+
+
+.designtext {
   margin-bottom: 50px;
 }
 
-
-.whatidoh1{
+.whatidoh1 {
   margin-bottom: 5%;
 }
 
-.toolslogo{
-  margin: 50px 0 30px 0;
+.toolslogo {
+  margin: 100px auto 32px auto;
+  width: 50%
 }
-.ctabut{
 
+.toolsvg{
+  width: 100%;
+  height: 100%;
+}
+
+.ctabut {
   padding: 16px 32px;
   gap: 16px;
   width: 348px;
@@ -360,13 +509,20 @@ hr{
   background: linear-gradient(180deg, #F7FCFC 0%, #FEFFFF 196.09%);
   box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
   border-radius: 50px;
-
 }
-.ctah1, .ctapara{
+@media (max-width: 1000px) {
+  .ctabut {
+
+  width: 100%;
+
+  }
+}
+
+.ctah1, .ctapara {
   margin-bottom: 50px;
 }
 
-.ctah1{
+.ctah1 {
   color: #142E30;
   font-style: normal;
   font-weight: 500;
@@ -378,8 +534,10 @@ footer{
   text-align: center;
   padding: 10px 10px;
 }
-.copyright{
+
+.copyright {
   color: #142E30;
+  font-size: 10px;
 }
 
 /* HERO SECTION STYPling */
@@ -398,7 +556,6 @@ footer{
   width: 100%;
   height: 100%;
 }
-
 
 @media only screen and (max-width: 1000px) {
   .herotext {
@@ -422,8 +579,7 @@ footer{
 }
 
 @media (max-width: 1000px) {
-
   .container-fluid {
-    padding: 2% 6%;
+    padding: 2% 5%;
   }
 }
