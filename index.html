@@ -8,24 +8,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Samuel A Portfolio</title>
 
-
+  <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-
+  <!-- bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <!-- aos animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap" rel="stylesheet">
-
+  <!-- local stylesheet -->
   <link rel="stylesheet" href="style.css">
 
   <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="public/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="public/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="public/favicon_io/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="public/favicon_io/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon.ico">
   <link rel="manifest" href="/site.webmanifest">
 
 </head>
@@ -51,10 +52,10 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item ">
-                <a class="nav-link logo" href="#"> <img src="images/twitterlogo.svg" alt="twitter logo"> </a>
+                <a class="nav-link logo" href="https://twitter.com/officialvhibez" target="_blank"> <img src="images/twitterlogo.svg" alt="twitter logo"> </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link logo" href="#"> <img src="images/github logo.svg" alt="github logo"> </a>
+                <a class="nav-link logo" href="https://github.com/Vhibez" target="_blank" > <img src="images/github logo.svg" alt="github logo"> </a>
               </li>
               <li class="nav-item" id="myWork">
                 <a class="nav-link" href="#"> My works </a>
@@ -88,7 +89,8 @@
 
           <div class="col-lg-6 ">
             <div class="heroimgdiv">
-              <img src="images/pix.png" alt="samuel img" class="heroimg">
+              <img   src="images/pix-min.png" alt="samuel img" class="heroimg" data-aos="fade-up"
+     data-aos-duration="1000">
             </div>
           </div>
         </div>
@@ -102,7 +104,9 @@
 
     <div class="PorttextFiledflex">
 
-      <div class="leftflex">
+      <div class="leftflex" data-aos="fade-right"
+     data-aos-offset="200"
+     data-aos-easing="ease-in-sine">
 
         <h2>TEAM COLABPRATION APP</h2>
 
@@ -116,10 +120,12 @@
         <p class="workparagraph"> Full website design and build for a concept team collaboration platform.
           This website also includes a beautiful blog. </p>
 
-        <button class="workBut butgrad1" type="button" name="button"> see the project <i class="fa-regular fa-circle-right"></i> </button>
-
+          <a href="colabpage.html"><button class="workBut butgrad1" type="button" name="button"> see the project <i class="fa-regular fa-circle-right"></i> </button>
+          </a> 
       </div>
-      <div class="rightfleximg">
+      <div class="rightfleximg" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
 
         <img class="workimg" src="images/colab1-min.png" alt="colab blog">
 
@@ -142,17 +148,13 @@
 
 
         <p class="workparagraph"> Landing Page Design, Portfolio design concepts with Figma </p>
-        <button class="workBut butgrad2" type="button" name="button"> see the project <i class="fa-regular fa-circle-right"></i> </button>
+        <a href="landingpage.html"><button class="workBut butgrad2" type="button" name="button"> see the project <i class="fa-regular fa-circle-right"></i> </button></a>
 
       </div>
       <div class="rightfleximg">
-
         <img class="workimg" src="images/car2-min.png" alt="colab blog">
-
       </div>
-
     </div>
-
   </section>
 
   <section id="testimonials">
@@ -166,7 +168,8 @@
 
       <div class="contentfortestimonials">
 
-        <h2>TESTIMONIALS</h2>
+        <div class="testiedit"><h2>TESTIMONIALS</h2></div>
+        
 
         <p class="whatpeoplesay">what people say about Samuel</p>
         <p class="testipara">
@@ -177,8 +180,6 @@
         <div class="authorrating">
           <span> Micheal Sam </span> <span class="ceoLa"> (CEO coLAB.)</span> <img class="starating" src="images/starrating.png" alt="rating">
         </div>
-
-
         <p class="testipara">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam,
           leo, eu in fermentum morbi euismod euismod vel. Arcu amet
@@ -187,12 +188,8 @@
         <div class="authorrating">
           <span> Micheal Sam </span> <span class="ceoLa"> (CEO coLAB.)</span> <img class="starating" src="images/starrating.png" alt="rating">
         </div>
-
-
       </div>
-
   </section>
-
 
   <section class="whatido">
 
@@ -218,7 +215,7 @@
     </div>
 
     <div class="toolslogo">
-      <img  class="toolsvg"src="images/toolslogo.svg" alt="">
+      <img class="toolsvg" src="images/toolslogo.svg" alt="">
     </div>
     <hr>
 
@@ -229,6 +226,44 @@
 
     </div>
 
+      <div class="containerform" id="formSection">
+
+          <h1> Send Samuel a message </h1>
+
+          <!-- form -->
+          <form action="" id="form" >
+            <!-- fullname -->
+            <div class="form-group">
+              <label for="fullname"> Full Name</label>
+              <input type="text" name="" id="name" placeholder="Full Name"
+                        required minlength="3" maxlength="50">
+            </div>
+
+            <!-- email address -->
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" name="email" id="email" placeholder="email@address.com"
+              required title="please input a valid email address">
+            </div>
+
+            <!-- message -->
+            <div class="form-group">
+              <label for="Message"> Message</label>
+              <input type="text" name="Message" id="Message" placeholder="Message"
+              required>
+            </div>
+
+            <button class="submitbut" type="submit"> Send Message</button>
+
+
+          </form>
+                  <!-- error/success message -->
+                <div class="message-container" >
+                  <h3 id="message"> Dont hesitate </h3>
+
+                </div>
+      </div>
+
   </section>
   <footer id="footer">
     <p class="copyright"> ©copyright 2022 Samuel ❤️❤️ A</p>
@@ -238,7 +273,9 @@
 
 
 
-
+  <!-- AOS javascript -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js" charset="utf-8"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
