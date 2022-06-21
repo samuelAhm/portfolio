@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
   <title>Samuel A Portfolio</title>
 
   <!-- font awesome -->
@@ -58,10 +62,10 @@
                 <a class="nav-link logo" href="https://github.com/Vhibez" target="_blank" > <img src="images/github logo.svg" alt="github logo"> </a>
               </li>
               <li class="nav-item" id="myWork">
-                <a class="nav-link" href="#"> My works </a>
+                <a class="nav-link" href="#myWorkPort"> My works </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> <button class="contactMe" type="button" name="button"> Contact me <i class="fa-regular fa-envelope"></i> </button> </a>
+                <a class="nav-link" href="#formSection"> <button class="contactMe" type="button" name="button"> Contact me <i class="fa-regular fa-envelope"></i> </button> </a>
               </li>
             </ul>
           </div>
@@ -74,15 +78,16 @@
         <div class="row herodiv">
           <div class="col-lg-6 heroMaintext">
             <div class="maintext">
-              <h1 class="herotext textitem">DESIGN AND DEVELOP WITH SAMUEL A </h1>
+              <h1 class="herotext" data-aos="fade-down" data-aos-duration="3000"> I'm Samuel. </h1>
 
-              <p class="textitem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Enim nunc in amet orci. Malesuada at a blandit pharetra
-                pharetra amet, pellentesque mauris posuere. Quam sit proin
-                lectus sit quisque. Augue urna, phasellus odio eu, eget
-                morbi. Lorem </p>
+              <p class="textitem">A web designer with knowledge of User interface.
+                I love learning new technology skills and best practices in designing and web developement.
+                When i'm not bent over on the computer, I enjoy reading, travelling and binging SCI-FI movies.
 
-              <button class="hiremeBut"> See my work below <i class="fa-solid fa-arrow-down-long"></i> </button>
+
+              </p>
+
+              <a href="#myWorkPort"><button class="hiremeBut"> See my work below <i class="fa-solid fa-arrow-down-long"></i> </button></a>
 
             </div>
           </div>
@@ -134,9 +139,11 @@
     </div>
 
 
-    <div class="PorttextFiledflex">
+    <div class="PorttextFiledflex" class="rightfleximg" >
 
-      <div class="leftflex">
+      <div class="leftflex" data-aos="fade-left"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
 
         <h2>LANDING PAGES & PORTFOLIOs SAMPLE</h2>
 
@@ -151,7 +158,9 @@
         <a href="landingpage.html"><button class="workBut butgrad2" type="button" name="button"> see the project <i class="fa-regular fa-circle-right"></i> </button></a>
 
       </div>
-      <div class="rightfleximg">
+      <div class="rightfleximg" data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
         <img class="workimg" src="images/car2-min.png" alt="colab blog">
       </div>
     </div>
@@ -162,11 +171,11 @@
 
     <div class="flexcontrolfortestimonial">
 
-      <div class="testimonialsimg">
+      <div class="testimonialsimg" data-aos="zoom-out-left"  data-aos-offset="500">
         <img class="samPicture2" src="images/imgwithbg-min.png" alt="samuel picuture">
       </div>
 
-      <div class="contentfortestimonials">
+      <div class="contentfortestimonials" data-aos="zoom-out-right">
 
         <div class="testiedit"><h2>TESTIMONIALS</h2></div>
         
@@ -197,38 +206,51 @@
 
     <div class="whatidocontainer">
 
-      <div class="firstbox">
+      <div class="firstbox" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"  data-aos-duration="1000">
         <img class="fontawesomelogo" src="images/designlogo.svg" alt=""> <br>
         <h3 class="designtext">Design</h3>
-        <p class="whatidopara"> Ips sum dolor sit amet, consectetur adipiscing elit. Diam,
-          leo, eu in fermentum morbi euismod euismod vel.
-          Arcu amet risus, lacus morbi commodo. Consectetur aliquam </p>
+        <p class="whatidopara"> I use FIGMA, ADOBE XD to  create visually stunning and user-centric websites.
+          My designs follow latest UI trends that gives best user experience
+         </p>
       </div>
 
-      <div class="firstbox">
+      <div class="firstbox" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
         <img class="fontawesomelogo" src="images/developmentsvg.svg" alt=""> <br>
         <h3 class="designtext">Deveopment</h3>
-        <p class="whatidopara"> Ips sum dolor sit amet, consectetur adipiscing elit. Diam,
-          leo, eu in fermentum morbi euismod euismod vel.
-          Arcu amet risus, lacus morbi commodo. Consectetur aliquam </p>
+        <p class="whatidopara"> I use HTML5, CSS3 (css framework like bootstrap and tailwind CSS), JS and website builder like WEBFLOW to bring your designs to live. </p>
       </div>
     </div>
 
-    <div class="toolslogo">
+    <div class="toolslogo" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
       <img class="toolsvg" src="images/toolslogo.svg" alt="">
     </div>
     <hr>
 
-    <div class="">
-      <h1 class="ctah1">Say Hi to Samuel</h1>
+    <div class="ctasection">
+      <h1 class="ctah1">Connect with Samuel </h1>
+  
+      <div class="connects">
+  
+          <a href=""><img class="connectlogo" src="images/upworksvg.svg" alt=""> </a>
+          <a href=""> <img class="connectlogo" src="images/fiverrlogo.png" alt=""></a>
+  
+  
+      </div>
+  
+  
       <p class="ctapara">If you need a web Designer for your projects</p>
-      <button class="ctabut" type="button" name="button">send me an Email</button>
-
+  
+      <!-- <button class="ctabut" type="button" name="button">send me an Email</button> -->
+    
     </div>
 
-      <div class="containerform" id="formSection">
+      <div class="containerform" id="formSection" data-aos="fade-down" data-aos-duration="2000" >
 
-          <h1> Send Samuel a message </h1>
+          <h1> Send Direct Message </h1>
 
           <!-- form -->
           <form action="" id="form" >
