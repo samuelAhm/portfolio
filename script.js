@@ -1,19 +1,18 @@
 
+const emailAddress = document.getElementById("email");
+const messageMe = document.getElementById("Message");
+const fullName = document.getElementById("name");
+
 const form = document.getElementById("form");
 const messageContainer = document.querySelector(".message-container");
 const message = document.getElementById("message");
 
-
-
-
 let isValid = false;
-
 
 function validateForm(){
 
   // Using constraint API
-  
-  isValid = form.checkValidity();
+    isValid = form.checkValidity();
   
   console.log(isValid);
   
@@ -28,12 +27,19 @@ if (isValid === true ) {
 } else {
   message.textContent = "Please fill the values";
   message.style.color = "red";
-  messageContainer.style.borderColor = "red";
-  
-  
+  messageContainer.style.borderColor = "red";  
 }
+  }
 
- 
+
+  function storeFormDate(){
+
+    const user = {
+      name: form.fullname.value,
+      email: form.email.value,
+      message: form.message.value
+    };
+      console.log(user)
   }
 
 function processFormData(e){
@@ -43,10 +49,21 @@ function processFormData(e){
   // validate form
   validateForm();
 
+if (isValid === true ){
+
+  storeFormDate();
 }
+
+form.reset();
+}
+
+
+
 
 // event listener
 form.addEventListener("submit", processFormData);
+
+
 
 
 

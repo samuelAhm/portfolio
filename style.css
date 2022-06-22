@@ -684,6 +684,7 @@ transition: all 0.2s;
   background-color: #528286;
   text-align: center;
 }
+
 @media (max-width: 1000px) {
   .maincontentcontainer {
     padding: 3% 5%;
