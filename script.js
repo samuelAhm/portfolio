@@ -1,12 +1,20 @@
 
-const emailAddress = document.getElementById("email");
-const messageMe = document.getElementById("Message");
-const fullName = document.getElementById("name");
+function sendMail(){
+
+  let params = {
+
+    from_name: document.getElementById("name").value,
+    email_id:  document.getElementById("email").value,
+    message: document.getElementById("message").value
+  }
+  emailjs.send("service_j58cloi", "template_e8aqufn", params);
+};
+
+
 
 const form = document.getElementById("form");
 const messageContainer = document.querySelector(".message-container");
 const message = document.getElementById("message");
-
 let isValid = false;
 
 function validateForm(){
@@ -14,15 +22,13 @@ function validateForm(){
   // Using constraint API
     isValid = form.checkValidity();
   
-  console.log(isValid);
-  
   // style main message for an error
-if (isValid === true ) {
 
-  message.textContent = " Message sent";
+if (isValid === true ){
+
+   message.textContent = "Message sent";
   message.style.color = "green";
   messageContainer.style.borderColor = "green";
-  
   
 } else {
   message.textContent = "Please fill the values";
@@ -53,6 +59,8 @@ if (isValid === true ){
 
   storeFormDate();
 }
+
+sendMail();
 
 form.reset();
 }

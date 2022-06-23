@@ -16,7 +16,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #0b1718;
+  color: #0b1516;
 }
 
 h2{
@@ -24,7 +24,7 @@ h2{
 }
 
 p {
-  color: #F4E3D9;
+  color: #ffffff;
   font-size: 18px;
   line-height: 32px;
   font-weight: 400;
@@ -119,6 +119,7 @@ hr {
     text-align: center;
     width: 100%;
     text-align: center;
+    filter: blur(0);
   }
 }
 
@@ -147,6 +148,7 @@ hr {
     text-align: center;
     width: 100%;
     text-align: center;
+    filter: blur(0);
   }
 }
 
@@ -327,7 +329,7 @@ hr {
 @media (max-width: 1000px) {
   .testimonialsimg {
     width: 330px;
-    height: 220px;
+    height: 170px;
     z-index: 0;
   }
 }
