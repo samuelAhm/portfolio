@@ -29,7 +29,7 @@ if (isValid === true ){
    message.textContent = "Message sent";
   message.style.color = "green";
   messageContainer.style.borderColor = "green";
-  
+
 } else {
   message.textContent = "Please fill the values";
   message.style.color = "red";
@@ -60,7 +60,7 @@ if (isValid === true ){
   storeFormDate();
 }
 
-sendMail();
+// sendMail();
 
 form.reset();
 }
