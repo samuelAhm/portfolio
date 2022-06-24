@@ -60,7 +60,7 @@ if (isValid === true ){
   storeFormDate();
 }
 
-// sendMail();
+sendMail();
 
 form.reset();
 }
